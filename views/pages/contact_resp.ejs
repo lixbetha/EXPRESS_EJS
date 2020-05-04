@@ -1,0 +1,23 @@
+<% contentFor ("content") %>
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+        <div class="container">
+            <h1 class="masthead-heading mb-0"><strong>¡Gracias!</strong></h1>
+            <h2 class="masthead-subheading mb-0">Por enviar tu información</h2>
+        </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+</header>
+<div class="contact-clean">
+    <form method="post">
+        <h2 class="text-center">Confirmación</h2>
+        <div class="form-group"><input class="form-control-plaintext" type="text"
+            value="Enviaremos un correo con la siguiente confirmación:">
+            <p><strong>Nombre:</strong> <%- name %>.</p>
+            <p><strong>Correo:</strong> <%- email %>.</p>
+        </div>
+    </form>
+</div>

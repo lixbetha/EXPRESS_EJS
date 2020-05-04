@@ -1,0 +1,152 @@
+<!--
+<% contentFor ("body")%>
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+        <div class="container">
+            <h1 class="masthead-heading mb-0">Obtén tu CURP</h1>
+            <h2 class="masthead-subheading mb-0">Fácil y Rápido</h2><a class="btn btn-primary btn-xl rounded-pill mt-5"
+                role="button" data-bs-hover-animate="wobble" href="/generator">Click aquí para saber tu CURP</a>
+        </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+</header>
+<section>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="rounded-circle img-fluid"
+                        src="public/img/surprised-girl_23-2148168175.jpg"></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4"><strong>Obtén tu CURP con la Clave Única de Registro de Población
+                            (CURP)</strong></h2>
+                    <p>Te permite inscribirte a la Clave Única de Registro de Población (CURP).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5"><img class="rounded-circle img-fluid"
+                        src="public/img/group-smiling-students-with-blank-placard_85574-12610.jpg"></div>
+            </div>
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5">
+                    <h2 class="display-4"><strong>¿Quiénes lo presentan?</strong></h2>
+                    <p class="text-break">* Personas físicas a partir de los 18 años de edad cumplidos que cuenten con
+                        CURP y requieran inscribirse en el CURP con o sin obligaciones fiscales.<br>* Personas físicas
+                        menores de edad a partir de los 16 años que cuenten con
+                        CURP y presten exclusivamente un servicio personal subordinado (salarios) desde su inscripción y
+                        hasta que cumplan 18 años.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="rounded-circle img-fluid" src="public/img/3ra.jpg"></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4"><strong>Fundamento Legal</strong></h2>
+                    <p>• Código Fiscal de la Federación, artículo 27.<br>• Reglamento del Código Fiscal de la
+                        Federación, artículo 22.<br>• Ley General de Población, artículo 67<br>• Resolución Miscelánea
+                        Fiscal, reglas 2.4.6. y 2.4.14.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="public/js/jquery.min.js"></script>
+<script src="public/bootstrap/js/bootstrap.min.js"></script>
+<script src="public/js/bs-init.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+</body>
+
+</html>
+
+-->
+
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+        <div class="container">
+            <h1 class="masthead-heading mb-0">Generador de</h1>
+            <h2 class="masthead-subheading mb-0">CURP</h2>
+        </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+</header>
+<div class="text-center contact-clean">
+    <form id="/generator" method="POST">
+        <h2 class="text-center">Generador de CURP</h2>
+        <div class="form-group" style="text-align: left;"><label for="name"><b>Nombre(s):</b></label><input class="form-control" id="name" type="text" name="name" placeholder="Ingresa tu nombre" required="true"></div>
+        <div class="form-group" style="text-align: left;"><label for="apat"><b>Primer apellido:</b></label><input class="form-control" id="apat" type="text" name="apat" placeholder="Ingresa tu primer apellido" required="true"></div>
+        <div class="form-group" style="text-align: left;"><label for="amat"><b>Segundo apellido:</b></label><input class="form-control" id="amat" type="text" name="amat" placeholder="Ingresa tu segundo apellido" required="true"></div>
+        <div class="form-group" style="text-align: left;"><label for="month"><b>Mes de nacimiento:</b></label><input class="form-control" id="month" type="number" name="month" min="1" max="12" placeholder="Escribe tu mes de nacimiento"required="true"></div>
+        <div class="form-group" style="text-align: left;"><label for="day"><b>Día de nacimiento:</b></label><input class="form-control" id="day" type="number" name="day" min="1" max="31" placeholder="Escribe tu día de nacimiento"required="true"></div>
+        <div class="form-group" style="text-align: left;"><label for="year"><b>Año de nacimiento:</b></label><input class="form-control" id="year" type="number" name="year" min="1950" max="2003" placeholder="Escribe tu año de nacimiento"required="true"></div>
+        <div class="form-group" style="text-align: left;"><label for="gender"><b>Selecciona tu género:</b></label><select class="form-control" id="gender" required="true">
+            <option>Hombre</option>
+            <option>Mujer</option>
+            </select></div>      
+        <div class="form-group" style="text-align: left;"><label for="ent"><b>Estado:</b></label><select class="form-control" id="ent" required="true">
+            <option value="" disabled="" selected="">Selecciona el estado</option>
+                    <option value="AS">Aguascalientes</option>
+                    <option value="BC">Baja California</option>
+                    <option value="BS">Baja California Sur</option>
+                    <option value="CC">Campeche</option>
+                    <option value="CL">Coahuila</option>
+                    <option value="CM">Colima</option>
+                    <option value="CS">Chiapas</option>
+                    <option value="CH">Chihuahua</option>
+                    <option value="DF">Ciudad de México</option>
+                    <option value="DG">Durango</option>
+                    <option value="GT">Guanajuato</option>
+                    <option value="GR">Guerrero</option>
+                    <option value="HG">Hidalgo</option>
+                    <option value="JC">Jalisco</option>
+                    <option value="MC">Estado de México</option>
+                    <option value="MN">Michoacán</option>
+                    <option value="MS">Morelos</option>
+                    <option value="NT">Nayarit</option>
+                    <option value="NL">Nuevo León</option>
+                    <option value="OC">Oaxaca</option>
+                    <option value="PL">Puebla</option>
+                    <option value="QT">Querétaro</option>
+                    <option value="QR">Quintana Roo</option>
+                    <option value="SP">San Luis Potosí</option>
+                    <option value="SL">Sinaloa</option>
+                    <option value="SR">Sonora</option>
+                    <option value="TC">Tabasco</option>
+                    <option value="TS">Tamaulipas</option>
+                    <option value="TL">Tlaxcala</option>
+                    <option value="VZ">Veracruz</option>
+                    <option value="YN">Yucatán</option>
+                    <option value="ZS">Zacatecas</option>
+                    <option value="NE">Nacido en el extranjero</option>
+            </select></div>
+
+
+
+
+
+        <div class="row mt-4">
+            <div class="col"><small class="form-text text-muted"></small></div>
+        </div>
+        <button class="btn btn-primary text-left" type="submit">Enviar</button>
+    </form> 
+</div>

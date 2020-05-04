@@ -1,0 +1,201 @@
+<!--
+    <header class="masthead text-center text-white">
+    <div class="masthead-content">
+        <div class="container">
+            <h1 class="masthead-heading mb-0">Generador de</h1>
+            <h2 class="masthead-subheading mb-0">CURP</h2>
+        </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+</header>
+<div class="text-center contact-clean">
+    <form id="/generator" method="POST">
+        <h2 class="text-center">Generador de CURP</h2>
+        <div class="form-group" style="text-align: left;"><label for="name"><b>Nombre(s):</b></label><input class="form-control" id="name" type="text" name="name" placeholder="Ingresa tu nombre" required="true"></div>
+        <div class="form-group" style="text-align: left;"><label for="apat"><b>Primer apellido:</b></label><input class="form-control" id="apat" type="text" name="apat" placeholder="Ingresa tu primer apellido" required="true"></div>
+        <div class="form-group" style="text-align: left;"><label for="amat"><b>Segundo apellido:</b></label><input class="form-control" id="amat" type="text" name="amat" placeholder="Ingresa tu segundo apellido" required="true"></div>
+        <div class="form-group" style="text-align: left;"><label for="month"><b>Mes de nacimiento:</b></label><input class="form-control" id="month" type="number" name="month" min="1" max="12" placeholder="Escribe tu mes de nacimiento"required="true"></div>
+        <div class="form-group" style="text-align: left;"><label for="day"><b>Día de nacimiento:</b></label><input class="form-control" id="day" type="number" name="day" min="1" max="31" placeholder="Escribe tu día de nacimiento"required="true"></div>
+        <div class="form-group" style="text-align: left;"><label for="year"><b>Año de nacimiento:</b></label><input class="form-control" id="year" type="number" name="year" min="1950" max="2003" placeholder="Escribe tu año de nacimiento"required="true"></div>
+        <div class="form-group" style="text-align: left;"><label for="gender"><b>Selecciona tu género:</b></label><select class="form-control" id="gender" required="true">
+            <option>Hombre</option>
+            <option>Mujer</option>
+            </select></div>      
+        <div class="form-group" style="text-align: left;"><label for="ent"><b>Estado:</b></label><select class="form-control" id="ent" required="true">
+            <option value="" disabled="" selected="">Selecciona el estado</option>
+                    <option value="AS">Aguascalientes</option>
+                    <option value="BC">Baja California</option>
+                    <option value="BS">Baja California Sur</option>
+                    <option value="CC">Campeche</option>
+                    <option value="CL">Coahuila</option>
+                    <option value="CM">Colima</option>
+                    <option value="CS">Chiapas</option>
+                    <option value="CH">Chihuahua</option>
+                    <option value="DF">Ciudad de México</option>
+                    <option value="DG">Durango</option>
+                    <option value="GT">Guanajuato</option>
+                    <option value="GR">Guerrero</option>
+                    <option value="HG">Hidalgo</option>
+                    <option value="JC">Jalisco</option>
+                    <option value="MC">Estado de México</option>
+                    <option value="MN">Michoacán</option>
+                    <option value="MS">Morelos</option>
+                    <option value="NT">Nayarit</option>
+                    <option value="NL">Nuevo León</option>
+                    <option value="OC">Oaxaca</option>
+                    <option value="PL">Puebla</option>
+                    <option value="QT">Querétaro</option>
+                    <option value="QR">Quintana Roo</option>
+                    <option value="SP">San Luis Potosí</option>
+                    <option value="SL">Sinaloa</option>
+                    <option value="SR">Sonora</option>
+                    <option value="TC">Tabasco</option>
+                    <option value="TS">Tamaulipas</option>
+                    <option value="TL">Tlaxcala</option>
+                    <option value="VZ">Veracruz</option>
+                    <option value="YN">Yucatán</option>
+                    <option value="ZS">Zacatecas</option>
+                    <option value="NE">Nacido en el extranjero</option>
+            </select></div>
+
+
+
+
+
+        <div class="row mt-4">
+            <div class="col"><small class="form-text text-muted"></small></div>
+        </div>
+        <button class="btn btn-primary text-left" type="submit">Enviar</button>
+    </form> 
+</div>
+
+-->
+
+<% contentFor ("body")%>
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+        <div class="container">
+            <h1 class="masthead-heading mb-0">¿Cómo se genera</h1>
+            <h2 class="masthead-subheading mb-0">la CURP?</h2><a class="btn btn-primary btn-xl rounded-pill mt-5"
+                role="button" data-bs-hover-animate="wobble" href="/">Click aquí para saber tu CURP</a>
+        </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+</header>
+<section>
+    <html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Getting Started</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="dh-row-text-image-right-responsive.css" />
+    <link rel="stylesheet" href="dh-row-titile-text-image-right-1.css" />
+</head>
+
+<body>
+    <div class="container" style="text-align: center;">
+        <header>
+        </br>
+        </br>
+            <h1>Más Información</h1>
+            <p class="lead text-center text-muted">Conoce más acerca de la Clave Única de Registro de Población</p>
+        </header>
+        <hr />
+        <p class="text-center text-info">En México, la Clave Única de Registro de Población (CURP) es un código alfanumérico único de identidad de 18 caracteres utilizado para identificar oficialmente tanto a residentes como a ciudadanos mexicanos de todo el país.</p>
+        <hr />
+    </div>
+</br>
+<div class="text-center">
+<img src="/public/img/img3.jpg" class="img-fluid" alt="Responsive image" style="text-align: center;">
+</div>
+</br>
+</br>    
+
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <b>¿Qué necesito para el trámite de mi CURP?</b>
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                Para poder tramitar tu CURP es necesario que presentes una copia de un acta de nacimiento, carta de naturalización o un documento migratorio (formato FM2 o FM3)            </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <b>¿En dónde puedo realizar el trámite de la CURP?</b>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                En cualquiera de los módulos más cercanos a tu domicilio. Usa el siguiente link para consultar a cual puedes dirigirte: Directorio de módulos para tramitar la CURP            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <b>¿Que pasa si mi CURP no está correcta?</b>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+                En caso de que tu CURP presente errores dirígete a alguna de las oficinas del Registro Civil o alguno de los módulos del Registro Nacional de Población con una copia del documento probatorio de identidad y tu una impresión de tu CURP. Allí podrás hacer una solicitud de corrección de datos.            </div>
+          </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <b>¿Cómo está compuesta la clave CURP? </b>               
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                Son 18 elementos, conformados por letras y números. Se generan a partir de los datos contenidos en el documento comprobatorio de tu identidad (acta de nacimiento, carta de naturalización o documento migratorio), y que se refieren a:
+                </br>> Tu primer y segundo apellido, así tu nombre de pila
+                </br>> Fecha de nacimiento
+                </br>> Sexo
+                </br>> Entidad Federativa
+                </br>> Un dígito verificador asignado al momento de generar tu clave CURP            
+            </div>
+          </div>
+          </div>
+
+      </div>
+    </br>
+    
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Consulta tu CURP gratis en línea</h4>
+        <p>Si deseas calcular tu CURP tan solo llena los campos donde se encuentra el generador y podrás saberla de inmediato.
+        </p>
+        <hr>
+        <p class="mb-0">Recuerda, si tienes algún problema con el trámite de tu CURP siempre puedes solicitar ayuda al Centro de Atención a Usuarios de la CURP, al 51 28 11 11 en CDMX y al 01 800 911 11 11 en el resto del país.</p>
+      </div>
+    
+    
+</body>
+
+</html>
