@@ -23,10 +23,12 @@ app.get("/", (req, res) => {
     res.render("pages/home");
 });
 
- //direccionamiento a la ruta de acerca de
+/*
+//direccionamiento a la ruta de acerca de
 app.get("/about", (req, res) => {
     res.render("pages/about")
 });
+*/
 
 //direccionamiento a la ruta de contacto
 app.get("/contact", (req, res) => {
@@ -44,13 +46,13 @@ app.post('/contact', (req, res) =>{
     res.render('pages/contact_resp',{name, email});//nos manda los valores a la página de confirmación para ser desplegados
 });
 
-//direccionamiento a la ruta de generación de RFC
+//direccionamiento a la ruta de información de CURP
 app.get("/generator", (req, res) => {
     res.render("pages/generator")
 });
 
 //obtención de los datos que necesitamos para la creación del RFC, 
-app.post('/generator', (req, res) => {
+app.post('/home', (req, res) => {
     
     //datos personales del usuario,
     var name = req.body.name;
@@ -59,6 +61,8 @@ app.post('/generator', (req, res) => {
     var month = req.body.month;
     var day = req.body.day;
     var year = req.body.year;
+    var gender = req.body.gender;
+    var ent = req.body.ent;
 
     //converción del texto a mayúsculas, 
     name = name.toUpperCase();
@@ -156,13 +160,12 @@ app.post('/generator', (req, res) => {
 
     var rfc = apatI + vocalPat(apat) + amatI + nameI + year[2] + year[3] + months(month) + days(day) + makeHomo(3);
     
-    res.render('pages/mi_rfc', {name, apat, amat, month, day, year, rfc});
+    res.render('pages/mi_curp', {name, apat, amat, month, day, year, rfc});
 });
 
 
-
-app.get('/mi_rfc', (req, res) => {
-    res.render('pages/mi_rfc')
+app.get('/mi_curp', (req, res) => {
+    res.render('pages/mi_curp')
 });
 
 //cuando el servidor esté listo, nos responderá con lo siguiente:

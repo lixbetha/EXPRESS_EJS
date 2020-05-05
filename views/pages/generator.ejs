@@ -1,100 +1,19 @@
-<!--
-    <header class="masthead text-center text-white">
-    <div class="masthead-content">
-        <div class="container">
-            <h1 class="masthead-heading mb-0">Generador de</h1>
-            <h2 class="masthead-subheading mb-0">CURP</h2>
-        </div>
-    </div>
-    <div class="bg-circle-1 bg-circle"></div>
-    <div class="bg-circle-2 bg-circle"></div>
-    <div class="bg-circle-3 bg-circle"></div>
-    <div class="bg-circle-4 bg-circle"></div>
-</header>
-<div class="text-center contact-clean">
-    <form id="/generator" method="POST">
-        <h2 class="text-center">Generador de CURP</h2>
-        <div class="form-group" style="text-align: left;"><label for="name"><b>Nombre(s):</b></label><input class="form-control" id="name" type="text" name="name" placeholder="Ingresa tu nombre" required="true"></div>
-        <div class="form-group" style="text-align: left;"><label for="apat"><b>Primer apellido:</b></label><input class="form-control" id="apat" type="text" name="apat" placeholder="Ingresa tu primer apellido" required="true"></div>
-        <div class="form-group" style="text-align: left;"><label for="amat"><b>Segundo apellido:</b></label><input class="form-control" id="amat" type="text" name="amat" placeholder="Ingresa tu segundo apellido" required="true"></div>
-        <div class="form-group" style="text-align: left;"><label for="month"><b>Mes de nacimiento:</b></label><input class="form-control" id="month" type="number" name="month" min="1" max="12" placeholder="Escribe tu mes de nacimiento"required="true"></div>
-        <div class="form-group" style="text-align: left;"><label for="day"><b>Día de nacimiento:</b></label><input class="form-control" id="day" type="number" name="day" min="1" max="31" placeholder="Escribe tu día de nacimiento"required="true"></div>
-        <div class="form-group" style="text-align: left;"><label for="year"><b>Año de nacimiento:</b></label><input class="form-control" id="year" type="number" name="year" min="1950" max="2003" placeholder="Escribe tu año de nacimiento"required="true"></div>
-        <div class="form-group" style="text-align: left;"><label for="gender"><b>Selecciona tu género:</b></label><select class="form-control" id="gender" required="true">
-            <option>Hombre</option>
-            <option>Mujer</option>
-            </select></div>      
-        <div class="form-group" style="text-align: left;"><label for="ent"><b>Estado:</b></label><select class="form-control" id="ent" required="true">
-            <option value="" disabled="" selected="">Selecciona el estado</option>
-                    <option value="AS">Aguascalientes</option>
-                    <option value="BC">Baja California</option>
-                    <option value="BS">Baja California Sur</option>
-                    <option value="CC">Campeche</option>
-                    <option value="CL">Coahuila</option>
-                    <option value="CM">Colima</option>
-                    <option value="CS">Chiapas</option>
-                    <option value="CH">Chihuahua</option>
-                    <option value="DF">Ciudad de México</option>
-                    <option value="DG">Durango</option>
-                    <option value="GT">Guanajuato</option>
-                    <option value="GR">Guerrero</option>
-                    <option value="HG">Hidalgo</option>
-                    <option value="JC">Jalisco</option>
-                    <option value="MC">Estado de México</option>
-                    <option value="MN">Michoacán</option>
-                    <option value="MS">Morelos</option>
-                    <option value="NT">Nayarit</option>
-                    <option value="NL">Nuevo León</option>
-                    <option value="OC">Oaxaca</option>
-                    <option value="PL">Puebla</option>
-                    <option value="QT">Querétaro</option>
-                    <option value="QR">Quintana Roo</option>
-                    <option value="SP">San Luis Potosí</option>
-                    <option value="SL">Sinaloa</option>
-                    <option value="SR">Sonora</option>
-                    <option value="TC">Tabasco</option>
-                    <option value="TS">Tamaulipas</option>
-                    <option value="TL">Tlaxcala</option>
-                    <option value="VZ">Veracruz</option>
-                    <option value="YN">Yucatán</option>
-                    <option value="ZS">Zacatecas</option>
-                    <option value="NE">Nacido en el extranjero</option>
-            </select></div>
-
-
-
-
-
-        <div class="row mt-4">
-            <div class="col"><small class="form-text text-muted"></small></div>
-        </div>
-        <button class="btn btn-primary text-left" type="submit">Enviar</button>
-    </form> 
-</div>
-
--->
-
 <% contentFor ("body")%>
-<header class="masthead text-center text-white">
+<header class="masthead text-center text-white" >
     <div class="masthead-content">
         <div class="container">
-            <h1 class="masthead-heading mb-0">¿Cómo se genera</h1>
+            <h1 class="masthead-heading mb-0" >¿Cómo se genera</h1>
             <h2 class="masthead-subheading mb-0">la CURP?</h2><a class="btn btn-primary btn-xl rounded-pill mt-5"
-                role="button" data-bs-hover-animate="wobble" href="/">Click aquí para saber tu CURP</a>
+                role="button" data-bs-hover-animate="wobble" href="/" style="background-color: #ac1646;">Click aquí para saber tu CURP</a>
         </div>
     </div>
-    <div class="bg-circle-1 bg-circle"></div>
-    <div class="bg-circle-2 bg-circle"></div>
-    <div class="bg-circle-3 bg-circle"></div>
-    <div class="bg-circle-4 bg-circle"></div>
 </header>
 <section>
     <html>
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <title>Getting Started</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" style="background-color: #042c24;"/>
     <link rel="stylesheet" href="bootstrap.min.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="dh-row-text-image-right-responsive.css" />
